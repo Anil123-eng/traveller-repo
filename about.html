@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Travel Adventure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 0ch;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        nav a.active {
+            background-color: #ff6b35;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .content-section {
+            /* remove white background box so text sits directly on page background */
+            background: transparent;
+            padding: 40px;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 30px;
+        }
+        
+        .about-text {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .feature p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .content-section {
+                padding: 25px;
+            }
+            
+            .about-text {
+                font-size: 1.1rem;
+            }
+            
+            nav ul {
+                gap: 15px;
+            }
+            
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Travel With Us" style="height: 200px; width: auto;">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-header">
+            <h1>About Our Travel Adventure</h1>
+        </div>
+        <div class="content-section">
+            <p class="about-text">
+                At Travel With Us, we believe that travel is more than just visiting new places; it's about creating unforgettable experiences, embracing diverse cultures, and making lifelong memories. Our journey began with a passion for exploration and a desire to share the wonders of the world with fellow travelers.
+            </p>
+            <p class="about-text">
+                Over the years, we have curated a wide range of travel packages that cater to every type of traveler. Whether you're seeking thrilling adventures, serene beach getaways, cultural immersions, or luxurious escapes, we have something special for you. Our dedicated team of travel experts works tirelessly to ensure that every trip is meticulously planned and executed to perfection.
+            </p>
+            <p class="about-text">
+                Join us as we explore the globe, one destination at a time. Let Travel With Us be your trusted companion on your next adventure, and together, we'll create stories worth telling.
+            </p>
+        </div>
+    </main>
+</body>
+</html>
